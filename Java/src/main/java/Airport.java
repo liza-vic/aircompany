@@ -86,7 +86,7 @@ public class Airport {
     }
 
     public Airport sortByMaxDistance() {
-          planes.sort((Comparator<Plane>) (o1, o2) -> o1.maxFlightDistance() - o2.maxFlightDistance());
+        planes.sort((Comparator<Plane>) (o1, o2) -> o1.getMaxFlightDistance() - o2.getMaxFlightDistance());
         return this;
     }
 
